@@ -1,0 +1,27 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141518;
+}
+
+.board {
+    background-color: #000000;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+    background-color: #a5cf00;
+    border: .25vmin solid #141518;
+}
+
+.food { 
+    background-color: #02bdd3;
+    border: .25vmin solid #141518;
+}
