@@ -5,6 +5,10 @@
     color: #ffffff;
 }
 
+.body {
+    position: relative;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -12,6 +16,7 @@
     justify-content: center;
     background-color: #141518;
     flex-direction: column;
+    position: relative;
 }
 
 .board {
@@ -41,6 +46,7 @@
     align-items: center;
     position: relative;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .score{
@@ -54,7 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9)
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
 }
 
 .select {
@@ -71,3 +78,26 @@ select option {
 .text {
     margin-bottom: 30px;
 }
+
+.desktop-playable {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .desktop-playable {
+        position: absolute;
+        height: 100vh;
+        background: #000000;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        display: none;
+    }
+}
+

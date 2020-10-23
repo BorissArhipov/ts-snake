@@ -12,6 +12,7 @@ class Game {
         this.select = document.querySelector('.select');
         this.scoreDiv = document.querySelector('.score');
         this.gameOver = document.querySelector('.game-over');
+        this.scoreLastDiv = document.querySelector('.score-last');
         this.moveCounter = 0;
         this.moveInterval = 700;
         this.score = 0;
@@ -54,6 +55,7 @@ class Game {
             this.moveCounter = 0;
             food.pos = food.getRandomPosition();
             this.lastKey = null;
+            this.scoreLastDiv.textContent = String(this.score);
             this.score = 0;
             this.scoreDiv.textContent = String(this.score);
             this.gameOver.style.display = 'flex';

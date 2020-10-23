@@ -7,6 +7,7 @@ export default class Game {
     private select: HTMLSelectElement;
     private scoreDiv: HTMLDivElement;
     private gameOver: HTMLDivElement;
+    private scoreLastDiv: HTMLDivElement;
     
     private lastTime: number;
     private moveCounter: number;
@@ -20,6 +21,7 @@ export default class Game {
         this.select = document.querySelector('.select') as HTMLSelectElement;
         this.scoreDiv = document.querySelector('.score') as HTMLDivElement;
         this.gameOver = document.querySelector('.game-over') as HTMLDivElement;
+        this.scoreLastDiv = document.querySelector('.score-last') as HTMLDivElement;
         
         this.moveCounter = 0;
         this.moveInterval = 700;
@@ -70,6 +72,7 @@ export default class Game {
             this.moveCounter = 0;
             food.pos = food.getRandomPosition();
             this.lastKey = null;
+            this.scoreLastDiv.textContent = String(this.score);
             this.score = 0;
             this.scoreDiv.textContent = String(this.score);
             this.gameOver.style.display = 'flex';
