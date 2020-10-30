@@ -1,14 +1,14 @@
-#Snake Typescript
+# Snake Typescript
 Typescript implementation of the snake game.
 
-##Responsibilities:
+## Responsibilities:
 
 * Building up a Typescript project
 * Implementing the OOP
 * Implementing the collision check pathern
 * Using the CSS Grid
 
-##Technologies:
+## Technologies:
 
 * HTML
 * CSS
@@ -17,5 +17,5 @@ Typescript implementation of the snake game.
 * Git
 * Webpack
 
-##Demo - https://snake.borissarhipov.me/
+## Demo - https://snake.borissarhipov.me/
 ### Playable only on desktop!
